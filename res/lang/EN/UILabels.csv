@@ -2,3 +2,8 @@ KEY, VALUE
 fileMenu, File
 optionMenu, Options
 helpMenu, Help
+fileMenu_new, New
+fileMenu_open, Open
+fileMenu_save, Save
+optionMenu_settings, Settings
+helpMenu_help, Help
