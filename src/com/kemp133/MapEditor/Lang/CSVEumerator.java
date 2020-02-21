@@ -1,3 +1,5 @@
+package com.kemp133.MapEditor.Lang;
+
 import java.util.Enumeration;
 import java.util.Iterator;
 

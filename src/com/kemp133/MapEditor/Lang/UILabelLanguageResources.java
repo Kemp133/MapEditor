@@ -1,3 +1,5 @@
+package com.kemp133.MapEditor.Lang;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.nio.file.Path;
@@ -7,13 +9,13 @@ public class UILabelLanguageResources extends ResourceBundle {
 
 	protected        HashMap<String, String> labels;
 //	protected static String                  resourceFileLocation;
-//	protected static String                  delimeter;
+//	protected static String                  delimiter;
 
 	{
 		labels = new HashMap<>();
 	}
 
-	UILabelLanguageResources(String fileLocation, String delimeter) throws Exception {
+	public UILabelLanguageResources(String fileLocation, String delimiter) throws Exception {
 		String line;
 		List<Integer> lineErrors = new LinkedList<>();
 
@@ -26,7 +28,7 @@ public class UILabelLanguageResources extends ResourceBundle {
 				int rowCount = 2;
 
 				while ((line = br.readLine()) != null) {
-					String[] keyValuePair = line.split(delimeter);
+					String[] keyValuePair = line.split(delimiter);
 
 					if (keyValuePair.length != 2) {
 						lineErrors.add(rowCount++);
